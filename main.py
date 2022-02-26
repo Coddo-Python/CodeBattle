@@ -1,4 +1,12 @@
-print("hello world! Test")
-from rich import print
+from flask import Flask, render_template
 
-print("[bold red]hello[/bold red]")
+app = Flask(__name__)
+
+
+@app.route("/")
+def hello_world():
+    return render_template('Home.html')
+
+
+if __name__ == '__main__':
+    app.run()
