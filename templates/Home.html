@@ -4,8 +4,71 @@
     <meta charset="UTF-8">
     <title>Monumental</title>
     <link rel="stylesheet" href="/static/css/tailwind.css">
+
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body>
-<p>Hello There!</p>
+<header class="w-full fixed z-50">
+    <nav class="mx-12 my-3 rounded-lg shadow-2xl hidden md:flex flex-row justify-content-center bg-sand-100">
+        <img src="/static/images/logo.png" class="p-2 h-auto w-20" alt="Cargo Claw Logo">
+        <div class="flex-center">
+            <a class="nav-button text-black" href="/">
+                Home
+            </a>
+        </div>
+        <div class="flex-center">
+            <a class="nav-button text-black" href="/info">
+                Info
+            </a>
+        </div>
+        <div class="flex-center">
+            <a class="nav-button text-black" href="/quiz">
+                Quiz
+            </a>
+        </div>
+    </nav>
+    <div x-data="{ open: false }">
+        <div class="mt-3 h-full flex md:hidden flex-col w-max items-center mx-auto bg-sand-100">
+            <img src="/static/images/logo.png" class="p-2 h-auto w-28 dotted-bg rounded-lg shadow-2xl"
+                 alt="cargoclaw Logo">
+            <div x-show="open" class="mx-4 rounded-b-lg text-center bg-white">
+                <div class="flex-center">
+                    <a class="nav-button text-black" href="/">
+                        Home
+                    </a>
+                </div>
+                <div class="flex-center">
+                    <a class="nav-button text-black" href="/info">
+                        Info
+                    </a>
+                </div>
+                <div class="flex-center">
+                    <a class="nav-button text-black" href="/quiz">
+                        Quiz
+                    </a>
+                </div>
+            </div>
+        </div>
+        <button @click="open = ! open" class="p-1 md:hidden flex mx-auto dotted-bg rounded-b-lg"><img
+                class="h-auto w-8"
+                src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM4NHB0IiB2aWV3Qm94PSIwIC01MyAzODQgMzg0IiB3aWR0aD0iMzg0cHQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTM2OCAxNTQuNjY3OTY5aC0zNTJjLTguODMyMDMxIDAtMTYtNy4xNjc5NjktMTYtMTZzNy4xNjc5NjktMTYgMTYtMTZoMzUyYzguODMyMDMxIDAgMTYgNy4xNjc5NjkgMTYgMTZzLTcuMTY3OTY5IDE2LTE2IDE2em0wIDAiLz48cGF0aCBkPSJtMzY4IDMyaC0zNTJjLTguODMyMDMxIDAtMTYtNy4xNjc5NjktMTYtMTZzNy4xNjc5NjktMTYgMTYtMTZoMzUyYzguODMyMDMxIDAgMTYgNy4xNjc5NjkgMTYgMTZzLTcuMTY3OTY5IDE2LTE2IDE2em0wIDAiLz48cGF0aCBkPSJtMzY4IDI3Ny4zMzIwMzFoLTM1MmMtOC44MzIwMzEgMC0xNi03LjE2Nzk2OS0xNi0xNnM3LjE2Nzk2OS0xNiAxNi0xNmgzNTJjOC44MzIwMzEgMCAxNiA3LjE2Nzk2OSAxNiAxNnMtNy4xNjc5NjkgMTYtMTYgMTZ6bTAgMCIvPjwvc3ZnPg=="
+                alt="Burger Menu Icon"/>
+        </button>
+    </div>
+</header>
+
+<div class="hero min-h-screen"
+     style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/47/Fujairah_Fort_in_UAE_Side_View.jpg);">
+    <div class="hero-overlay bg-opacity-60"></div>
+    <div class="text-center hero-content text-neutral-content">
+        <div class="max-w-md">
+            <h1 class="mb-5 text-5xl font-bold">Welcome</h1>
+            <p class="mb-5">UAE is home to some of the finest historical monuments, ranging from forts, villages, and
+                ports.</p>
+            <button class="btn btn-primary" onClick="document.location = document.location.href + '/info'">Learn More
+            </button>
+        </div>
+    </div>
+</div>
 </body>
 </html>
