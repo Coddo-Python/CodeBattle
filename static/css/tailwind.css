@@ -2362,6 +2362,10 @@ html {
   width: 2rem;
 }
 
+.w-48 {
+  width: 12rem;
+}
+
 .max-w-md {
   max-width: 28rem;
 }
@@ -2419,11 +2423,6 @@ html {
 
 .text-5xl {
   font-size: 3rem;
-  line-height: 1;
-}
-
-.text-8xl {
-  font-size: 6rem;
   line-height: 1;
 }
 
