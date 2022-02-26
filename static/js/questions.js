@@ -2,59 +2,37 @@
 let questions = [
     {
     numb: 1,
-    question: "What does HTML stand for?",
-    answer: "Hyper Text Markup Language",
+    question: "Which one of these is not a historical monument?",
+    answer: "Sheikh Fort",
     options: [
-      "Hyper Text Preprocessor",
-      "Hyper Text Markup Language",
-      "Hyper Text Multiple Language",
-      "Hyper Tool Multi Language"
+      "Al Jazirah Al Hamra",
+      "Heritage village",
+      "Sheikh Zayed Grand Mosque",
+      "Sheikh Fort"
     ]
   },
     {
     numb: 2,
-    question: "What does CSS stand for?",
-    answer: "Cascading Style Sheet",
+    question: "Where is Al Jazirah Al Hamra?",
+    answer: "South of Ras Al Khaimah",
     options: [
-      "Common Style Sheet",
-      "Colorful Style Sheet",
-      "Computer Style Sheet",
-      "Cascading Style Sheet"
+      "South of Ras Al Khaimah",
+      "North of Abu Dhabi",
+      "South of Dubai",
+      "West of Dubai"
     ]
   },
     {
     numb: 3,
-    question: "What does PHP stand for?",
-    answer: "Hypertext Preprocessor",
+    question: "When was the Dubai Museum built?",
+    answer: "1787",
     options: [
-      "Hypertext Preprocessor",
-      "Hypertext Programming",
-      "Hypertext Preprogramming",
-      "Hometext Preprocessor"
+      "1687",
+      "1987",
+      "1887",
+      "1787"
     ]
-  },
-    {
-    numb: 4,
-    question: "What does SQL stand for?",
-    answer: "Structured Query Language",
-    options: [
-      "Stylish Question Language",
-      "Stylesheet Query Language",
-      "Statement Question Language",
-      "Structured Query Language"
-    ]
-  },
-    {
-    numb: 5,
-    question: "What does XML stand for?",
-    answer: "eXtensible Markup Language",
-    options: [
-      "eXtensible Markup Language",
-      "eXecutable Multiple Language",
-      "eXTra Multi-Program Language",
-      "eXamine Multiple Language"
-    ]
-  },
+  }
   // you can uncomment the below codes and make duplicate as more as you want to add question
   // but remember you need to give the numb value serialize like 1,2,3,5,6,7,8,9.....
 
