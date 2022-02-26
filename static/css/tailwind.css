@@ -2276,6 +2276,10 @@ html {
   color: black;
 }
 
+.grid {
+  display: grid;
+}
+
 .fixed {
   position: fixed;
 }
@@ -2314,6 +2318,10 @@ html {
 
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .hidden {
@@ -2356,6 +2364,10 @@ html {
 
 .max-w-md {
   max-width: 28rem;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -2407,6 +2419,11 @@ html {
 
 .text-5xl {
   font-size: 3rem;
+  line-height: 1;
+}
+
+.text-8xl {
+  font-size: 6rem;
   line-height: 1;
 }
 
