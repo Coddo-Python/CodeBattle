@@ -2,9 +2,93 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Monumental</title>
+    <link rel="stylesheet" href="/static/css/tailwind.css">
+
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body>
+<header class="w-full fixed z-50">
+    <nav class="mx-12 my-3 rounded-lg shadow-2xl hidden md:flex flex-row justify-content-center bg-sand-100">
+        <img src="/static/images/logo.png" class="p-2 h-auto w-20" alt="Cargo Claw Logo">
+        <div class="flex-center">
+            <a class="nav-button text-black" href="/">
+                Home
+            </a>
+        </div>
+        <div class="flex-center">
+            <a class="nav-button text-black" href="/info">
+                Info
+            </a>
+        </div>
+        <div class="flex-center">
+            <a class="nav-button text-black" href="/quiz">
+                Quiz
+            </a>
+        </div>
+    </nav>
+    <div x-data="{ open: false }">
+        <div class="mt-3 h-full flex md:hidden flex-col w-max items-center mx-auto bg-sand-100">
+            <img src="/static/images/logo.png" class="p-2 h-auto w-28 dotted-bg rounded-lg shadow-2xl"
+                 alt="cargoclaw Logo">
+            <div x-show="open" class="mx-4 rounded-b-lg text-center bg-white">
+                <div class="flex-center">
+                    <a class="nav-button text-black" href="/">
+                        Home
+                    </a>
+                </div>
+                <div class="flex-center">
+                    <a class="nav-button text-black" href="/info">
+                        Info
+                    </a>
+                </div>
+                <div class="flex-center">
+                    <a class="nav-button text-black" href="/quiz">
+                        Quiz
+                    </a>
+                </div>
+            </div>
+        </div>
+        <button @click="open = ! open" class="p-1 md:hidden flex mx-auto dotted-bg rounded-b-lg"><img
+                class="h-auto w-8"
+                src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM4NHB0IiB2aWV3Qm94PSIwIC01MyAzODQgMzg0IiB3aWR0aD0iMzg0cHQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTM2OCAxNTQuNjY3OTY5aC0zNTJjLTguODMyMDMxIDAtMTYtNy4xNjc5NjktMTYtMTZzNy4xNjc5NjktMTYgMTYtMTZoMzUyYzguODMyMDMxIDAgMTYgNy4xNjc5NjkgMTYgMTZzLTcuMTY3OTY5IDE2LTE2IDE2em0wIDAiLz48cGF0aCBkPSJtMzY4IDMyaC0zNTJjLTguODMyMDMxIDAtMTYtNy4xNjc5NjktMTYtMTZzNy4xNjc5NjktMTYgMTYtMTZoMzUyYzguODMyMDMxIDAgMTYgNy4xNjc5NjkgMTYgMTZzLTcuMTY3OTY5IDE2LTE2IDE2em0wIDAiLz48cGF0aCBkPSJtMzY4IDI3Ny4zMzIwMzFoLTM1MmMtOC44MzIwMzEgMC0xNi03LjE2Nzk2OS0xNi0xNnM3LjE2Nzk2OS0xNiAxNi0xNmgzNTJjOC44MzIwMzEgMCAxNiA3LjE2Nzk2OSAxNiAxNnMtNy4xNjc5NjkgMTYtMTYgMTZ6bTAgMCIvPjwvc3ZnPg=="
+                alt="Burger Menu Icon"/>
+        </button>
+    </div>
+</header>
 
+<div class="hero min-h-screen"
+     style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/47/Fujairah_Fort_in_UAE_Side_View.jpg);">
+    <div class="hero-overlay bg-opacity-60"></div>
+    <div class="text-center hero-content text-neutral-content">
+        <div class="max-w-md">
+            <h1 class="mb-5 text-5xl font-bold">Welcome</h1>
+            <p class="mb-5 w-full">Historical monuments UAE
+Qasr Al Muwaiji:
+Qasr Al Muwaiji is a fort located in Al Ain, famous for being the birthplace of Sheikh Khalifa bin Zayed Al Nahyan. Preserved by the government, this fort gives you an insight of the past and history of the UAE.
+
+Dubai Museum:
+Located in Al Fahidi Fort, the Dubai Museum is the oldest existing building, being built in 1787. This museum served as a place for defense, a prison and as a weapon depot. The fort was then opened in 1971 for the public as a museum to explore
+
+Sheikh Zayed Grand Mosque:
+One of the largest mosques in the world, the Sheikh Zayed Grand Mosque is one of the greatest architectural and artistic work, and a place for worship and prayer. In total, the mosque features 82 domes, more than 1,000 columns, 24-carat-gold gilded chandeliers and the world's largest hand-knotted carpet.
+
+Heritage village:
+Heritage Village (built in 1997) give you a chance to experience old traditions and customs, and offers you a peek at the old characteristics of houses, handicrafts, patterns, and forms of living.
+
+Al Jazirah Al Hamra:
+Al Jazirah Al Hamra is a town located to the south of Ras Al Khaimah. In this town, you can see abandoned houses and other buildings, and so is widely believed to be haunted. This town is an undisturbed picture of life in the UAE before the discovery of and when pearl-diving was still the main income of the UAE.
+
+Dhow Yard:
+when pearl-diving was still the main income of the UAE, the Dhow Yard (located in Ajman), was where the divers would set sail in the summer for collecting pearls. Here, you can find how business was in the Bedouin times and in addition to that, experience the Arab culture, customs and cuisines.
+
+Al Bithnah Fort:
+Al Bithnah Fort, Fujairah, is an arab-style fortification of rock, coral and mudbrick. The fort played a major part in the history of UAE with an overlooking position of the area. This ensured and helped Fujairah gain independence as an emirate
+</p>
+            <button class="btn btn-primary" onClick="document.location = document.location.href + '/info'">Learn More
+            </button>
+        </div>
+    </div>
+</div>
 </body>
 </html>

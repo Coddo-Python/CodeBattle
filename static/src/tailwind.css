@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .nav-button {
+        @apply btn btn-ghost btn-sm rounded-btn text-black
+    }
+
+    .flex-center {
+        @apply flex items-center justify-center
+    }
+
+    .team-cell {
+        @apply rounded-lg flex flex-col md:flex-row lg:flex-col bg-white w-1/5 shadow-xl
+    }
+
+    .team-img {
+        @apply rounded-t-lg md:rounded-bl-lg md:rounded-tr-none lg:rounded-tr-lg lg:rounded-bl-none h-auto w-full md:w-96
+    }
+
+    .team-tag-container {
+        @apply flex p-3 gap-1
+    }
+
+    .team-tag {
+        @apply rounded-full min-w-min max-w-min p-1 text-xs text-center px-3
+    }
+
+    .before\:bg-warning::before {
+        background-color: hsla(var(--wa)) !important;
+    }
+
+    .text-black {
+        color: black;
+    }
+
+    .grid {
+        display: grid;
+    }
+
+    .grid-rows-2 {
+        grid-template-rows: repeat(2, minmax(0, 1fr));
+    }
+}
